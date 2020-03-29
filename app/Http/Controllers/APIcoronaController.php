@@ -19,6 +19,6 @@ class APIcoronaController extends Controller
         -> with('data1', $data1) ;
     }
 
-    
+
 
 }

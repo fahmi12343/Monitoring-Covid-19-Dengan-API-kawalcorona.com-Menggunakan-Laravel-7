@@ -46,8 +46,8 @@
         </div>
     </nav>
 
-        <br>    <h2 align="center">Indonesian Report Covid-19</h2>
-        <br>    <p align="center">Indonesian Live Data</p>
+        <br>    <h2 align="center">world Report Covid-19</h2>
+        <br>    <p align="center">world Live Data</p>
         <br>
 
         {{-- card --}}
@@ -59,7 +59,7 @@
                     <div class="card border-warning">
                         <div class="card-body">
                             <h5 class="card-title">TOTAL POSITIF </h5>
-                            <p class="card-text" value=""> {{ $data1 [0]['positif'] }} Orang </p>
+                            <p class="card-text" value=""> {{ $data1 ['value'] }} Orang </p>
                         </div>
                     </div>
                     <br>
@@ -69,7 +69,7 @@
                     <div class="card border-success">
                         <div class="card-body">
                             <h5 class="card-title">TOTAL SEMBUH</h5>
-                            <p class="card-text">{{ $data1 [0]['sembuh'] }} Orang </p>
+                            <p class="card-text">{{ $data2 ['value'] }} Orang </p>
                         </div>
                     </div>
                     <br>
@@ -79,7 +79,7 @@
                     <div class="card border-danger">
                         <div class="card-body">
                             <h5 class="card-title">TOTAL MENINGGAL</h5>
-                            <p class="card-text">{{ $data1 [0]['meninggal'] }} Orang </p>
+                            <p class="card-text">{{ $data3 ['value'] }} Orang </p>
                         </div>
                     </div>
                 </div>
@@ -117,10 +117,10 @@
 
                                                                 <tr>
                                                                     <td>{{ $nomor }}</td>
-                                                                    <td>{{ $data ['attributes']['Provinsi'] }}</td>
-                                                                    <td>{{ $data ['attributes']['Kasus_Posi'] }}</td>
-                                                                    <td>{{ $data ['attributes']['Kasus_Semb'] }}</td>
-                                                                    <td>{{ $data ['attributes']['Kasus_Meni'] }}</td>
+                                                                    <td>{{ $data ['attributes']['Country_Region'] }}</td>
+                                                                    <td>{{ $data ['attributes']['Confirmed'] }}</td>
+                                                                    <td>{{ $data ['attributes']['Recovered'] }}</td>
+                                                                    <td>{{ $data ['attributes']['Deaths'] }}</td>
                                                                 </tr>
 
                                                     @php
